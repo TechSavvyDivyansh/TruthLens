@@ -5,8 +5,9 @@ import Link from "next/link";
 
 export default function page() {
   return (
-    <div className="w-[99%] h-[89%] bg-light-300 rounded-xl text-black p-10">
-      analyse
+    <div className="w-[99%] h-[79%] rounded-xl text-black p-10">
+      welcome to so and so (login/regi) <br />
+      if regi - personal/professional and accordingly
     </div>
   );
 }

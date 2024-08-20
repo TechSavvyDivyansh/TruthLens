@@ -33,12 +33,16 @@
     /* background: #1e2238; */
     background: transparent;
   }
+
+  .dark {
+    @apply bg-gray-900 text-white;
+  }
 }
 
 @layer utilities {
   /* ===== UTILITIES */
   .sidebar {
-    @apply remove-scrollbar w-full max-w-80 h-[97vh] flex flex-col overflow-auto bg-light-300 px-7 py-10 rounded-xl m-5;
+    @apply remove-scrollbar w-full max-w-80 h-[97vh] flex flex-col overflow-auto px-7 py-10 rounded-xl m-5;
   }
 
   .sidebarItem{
@@ -46,7 +50,7 @@
   }
 
   .navbar{
-    @apply bg-light-300 w-[99%] h-[70px] my-5 rounded-xl mr-5
+    @apply w-[99%] h-[70px] my-5 rounded-xl mr-5
   }
   
 
@@ -372,3 +376,4 @@ body
 {
   overflow: hidden;
 }
+

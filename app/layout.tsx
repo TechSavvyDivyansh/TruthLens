@@ -27,18 +27,20 @@ export default function RootLayout({
       <head>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
       </head>
-      <body className={cn('min-h-screen bg-light-200 text-dark-400 font-sans antialiased',fontSans.variable)}>
+      <body className={cn('min-h-screen font-sans antialiased',fontSans.variable)}>
           <ThemeProvider
                 attribute="class"
-                defaultTheme="dark"
-              >
-                <div className="w-full flex">
-                  <SideNav/>
-                  <div className="w-full flex flex-col">
-                    <Navbar/>
-                    {children}
-                  </div>
-                </div>
+                defaultTheme="system"
+                enableSystem
+                disableTransitionOnChange
+          >
+            <div className="w-full flex p-10">
+              <SideNav />
+              <div className="w-full min-h-screen flex flex-col">
+                <Navbar/>
+                {children}
+              </div>
+            </div>
           </ThemeProvider>
       </body>
     </html>
