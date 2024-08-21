@@ -36,7 +36,7 @@ export default function RootLayout({
           >
             <div className="w-full flex p-10">
               <SideNav />
-              <div className="w-full min-h-screen flex flex-col">
+              <div className="w-full flex flex-col">
                 <Navbar/>
                 {children}
               </div>
