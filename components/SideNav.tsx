@@ -50,8 +50,8 @@ export default function SideNav() {
     };
 
     return (
-        <div className={`p-5 h-[635px] flex flex-col rounded-xl ${theme === 'dark' ? 'bg-gray-800 text-white' : 'bg-gray-100 text-black'}`}>
-            <div className="px-3 py-2 flex-1">
+        <div className={`sidebar ${theme === 'dark' ? 'darkThemeForeground' : 'lightThemeForeground'}`}>
+            <div className="px-3 py-2">
                 <Image src="/assets/logo.png" width={220} height={170} alt="logo" />
             </div>
             <div className="space-y-1 flex flex-col gap-7 my-20">

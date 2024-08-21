@@ -11,6 +11,11 @@
 
 }
 
+body
+{
+  overflow: hidden;
+}
+
 /* ========================================== TAILWIND STYLES */
 @layer base {
   /* Remove scrollbar */
@@ -34,15 +39,12 @@
     background: transparent;
   }
 
-  .dark {
-    @apply bg-gray-900 text-white;
-  }
 }
 
 @layer utilities {
-  /* ===== UTILITIES */
+  
   .sidebar {
-    @apply remove-scrollbar w-full max-w-80 h-[97vh] flex flex-col overflow-auto px-7 py-10 rounded-xl m-5;
+    @apply remove-scrollbar w-full max-w-80 h-[94vh] flex flex-col px-7 py-10 rounded-xl;
   }
 
   .sidebarItem{
@@ -50,9 +52,21 @@
   }
 
   .navbar{
-    @apply w-[99%] h-[70px] my-5 rounded-xl mr-5
+    @apply w-full p-5 flex justify-between items-center
   }
   
+  .highlighter
+  {
+    @apply w-[600px] h-[500px] bg-blue-800 absolute rounded-full blur-3xl -z-10
+  }
+
+  .card{
+    @apply w-[400px] h-[600px] bg-blue-800 rounded-2xl flex flex-col
+  }
+
+  .result{
+    @apply w-full h-[10%] flex items-center justify-between
+  }
 
   .left-sidebar {
     @apply hidden lg:flex;
@@ -372,8 +386,18 @@
 }
 
 
-body
+.scan-animation
 {
-  overflow: hidden;
+   animation: scan 1.5s alternate-reverse infinite;
 }
 
+@keyframes scan {
+    0%
+    {
+       transform: translateY(-60px);
+    }
+    100%
+    {
+      transform: translateY(400px);
+    }
+}

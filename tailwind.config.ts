@@ -20,16 +20,30 @@ const config = {
       },
     },
     extend: {
+      blur: {
+        'xs': '2px',
+        'sm': '4px',
+        'md': '8px',
+        'lg': '16px',
+        'xl': '24px',
+        '2xl': '40px',
+        '3xl': '160px',
+        // Add custom blur values here
+      },
       colors: {
         green: {
           500: "#24AE7C",
           600: "#0D2A1F",
+          700:"#00B633"
         },
         blue: {
           500: "#79B5EC",
           600: "#152432",
+          800:"#0A1334",
+          900:"#0A0B11"
         },
         red: {
+          400:"#FF0606",
           500: "#F37877",
           600: "#3E1716",
           700: "#F24E43",
@@ -48,6 +62,9 @@ const config = {
           600: "#76828D",
           700: "#ABB8C4",
         },
+        primary:{
+          400:"#fb561c"
+        }
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
