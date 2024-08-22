@@ -388,7 +388,7 @@ body
 
 .scan-animation
 {
-   animation: scan 1.5s alternate-reverse infinite;
+   animation: scan 1.5s ease-in-out alternate-reverse infinite;
 }
 
 @keyframes scan {

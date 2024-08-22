@@ -13,7 +13,7 @@ type CardPropsType={
 
 export default function Card({resultSentiment,image,summary,comments}:CardPropsType) {
   return (
-    <div className="card translate-y-7">
+    <div className="card translate-y-7 overflow-hidden">
             <Image src={image} alt="dummy image" width={350} height={350} className='w-full h-[50%] object-cover'/>
             <div className={`result ${resultSentiment==1?"bg-green-700":"bg-red-400"} p-3`}>
                 <p className='font-semibold'>{resultSentiment==1?"GENUINE":"FAKE"}</p>

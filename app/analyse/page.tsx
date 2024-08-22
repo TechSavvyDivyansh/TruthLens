@@ -27,14 +27,14 @@ export default function analyse() {
         <FileUpload />
       </div> */}
 
-      <div className="w-[60vw] h-full top-24 left-0 p-5 flex flex-col gap-7 items-center justify-center relative">
+      <div className="w-[60vw] h-[90vh] top-24 left-0 p-5 flex flex-col gap-7 items-center justify-center relative">
           <ScanAnimation/>
           <CustomButton className='bg-blue-700 w-[600px]'>UPLOAD MEDIA</CustomButton>
          
-          <CustomButton className='border-2 border-blue-700 text-blue-700 absolute bottom-0 right-7 translate-y-24'>Anlaysis Media</CustomButton>
+          <CustomButton className='border-2 border-blue-700 text-blue-700 absolute bottom-10 right-7'>Anlaysis Media</CustomButton>
       </div>
       <div className="w-[40vw] h-full bg-black absolute top-0 right-0 -z-20 flex justify-center items-center">
-          <Card resultSentiment={resultSentiment} image={"/assets/Cybersecurity.jpeg"} summary={"The video was detected to be possibly a deepfake video because of the following reasons:"} comments={"Inconsistent Facial Movements - 00:10 Anomalies in Lighting - 00:16"} />
+          <Card resultSentiment={resultSentiment} image={"/assets/nightforest.avif"} summary={"The video was detected to be possibly a deepfake video because of the following reasons:"} comments={"Inconsistent Facial Movements - 00:10 Anomalies in Lighting - 00:16"} />
       </div>
 
     </div>

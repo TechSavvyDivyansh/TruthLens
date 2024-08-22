@@ -27,7 +27,7 @@ export default function RootLayout({
       <head>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
       </head>
-      <body className={cn('min-h-screen font-sans antialiased bg-blue-900 text-white remove-scrollbar',fontSans.variable)}>
+      <body className={cn('max-h-screen font-sans antialiased bg-blue-900 text-white remove-scrollbar overflow-hidden max-w-[100vw]',fontSans.variable)}>
           {/* <ThemeProvider
                 attribute="class"
                 defaultTheme="dark"

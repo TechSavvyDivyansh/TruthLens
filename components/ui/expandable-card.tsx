@@ -6,18 +6,15 @@
 
   const cards = [
       {
-        description: "Date",
-        title: "Topic",
-        src: "",
+        title: "Tranquil Forest",
+        description: "A serene daytime shot of a dense forest",
+        src: "/assets/forest.jpg",
         ctaText: "Details",      
         content: () => {
           return (
             <>
             <p>
-              <br />Uploaded doc type<br />Deepfake type found (In depth details added) <br />Reported or not
-              <br />Download media <br />Delete record
-              <br />Uploaded doc type<br />Deepfake type found (In depth details added) <br />Reported or not
-              <br />Download media <br />Delete record
+            The image exhibits natural lighting and shadow patterns consistent with real-world conditions.<br/> The tree density and foliage detail appear authentic, with no visible anomalies suggesting tampering.
             </p>
           </>
           );
@@ -25,97 +22,142 @@
       },
     
       {
-        description: "Date2",
-        title: "Topic2",
-        src: "",
+        title: "Enigmatic Night Forest",
+        description: " A forest captured under the moonlight, shrouded in darkness",
+        src: "/assets/nightforest.avif",
         ctaText: "Details",
         content: () => {
           return (
               <p>
-              Uploaded doc type<br />Deepfake type found (In depth details added) <br />Reported or not button
-              <br />Download media button<br />Delete record button
+              Inconsistent lighting sources, particularly around the tree edges, suggest digital manipulation.<br/> The moonlight appears unnaturally strong, casting unrealistic shadows, indicative of deepfake alterations.
             </p>
           );
         },
       },
 
       {
-        description: "Date3",
-        title: "Topic3",
-        src: "",
-        ctaText: "Details",
+        title: "Majestic Peaks",
+        description: "A towering mountain range basked in sunlight",
+        src: "/assets/mountain.jpg",
+        ctaText: "Details", 
         content: () => {
           return (
               <p>
+                The image showcases natural geological formations with no pixelation or distortion. The interplay of light and shadow on the peaks is consistent with the sun’s position, confirming its authenticity.
             </p>
           );
         },
       },
 
       {
-        description: "Date4",
-        title: "Topic4",
-        src: "",
+        title: "Serene Shoreline",
+        description: "A peaceful beach with calm waves and clear skies",
+        src: "/assets/beach.jpg",
         ctaText: "Details",
         content: () => {
           return (
               <p>
+                 Upon closer inspection, the wave patterns appear repetitive and lack the randomness of natural water movement. The sky’s gradient seems artificially smooth, hinting at digital enhancement.
             </p>
           );
         },
       },
 
       {
-        description: "Date5",
-        title: "Topic5",
-        src: "",
+        title: "Rocky Ascent",
+        description: "Another view of rugged mountains, with clouds hanging low",
+        src: "/assets/mountain2.avif",
         ctaText: "Details",
         content: () => {
           return (
               <p>
+                 The atmospheric conditions and cloud formations align perfectly with the mountain’s contours. No discrepancies are found in the terrain, supporting the image’s genuineness.
             </p>
           );
         },
       },
 
       {
-        description: "Date6",
-        title: "Topic6",
-        src: "",
+        title: "Cascading Waters",
+        description: "A breathtaking waterfall in a lush green environment",
+        src: "/assets/waterfall.jpg",
         ctaText: "Details",
         content: () => {
           return (
               <p>
+                The waterfall's flow appears unnaturally consistent, lacking the natural variations in water speed and direction. The splash at the base shows signs of being looped, which is a typical deepfake signature.
             </p>
           );
         },
       },
 
       {
-        description: "Date7",
-        title: "Topic7",
-        src: "",
+        title: "Journey Through Nature",
+        description: "Scenic view captured during a road trip, with mountains in the background",
+        src: "/assets/road trip.avif",
         ctaText: "Details",
         content: () => {
           return (
               <p>
+                The image reflects a natural, unaltered landscape. The perspective from the road aligns with typical travel photography, with no artifacts or signs of manipulation.
             </p>
           );
         },
       },
 
       {
-        description: "Date8",
-        title: "Topic8",
-        src: "",
+        title: "Elephant in the Wild",
+        description: "A close-up of an elephant in its natural habitat",
+        src: "/assets/elephants.jpg",
         ctaText: "Details",
         content: () => {
           return (
               <p>
+                 The elephant’s skin texture appears overly smooth, and certain shadows on the body seem out of place. The background blurs unnaturally, suggesting that this is a composite image.
             </p>
           );
         },
       },
+      {
+        title: "Gentle Giant",
+        description: "Another elephant, seen walking through the savanna",
+        src: "/assets/elephants.jpg",
+        ctaText: "Details",
+        content: () => {
+          return (
+              <p>
+                The image captures natural animal behavior, with proper shadow casting and consistent lighting. The background elements blend seamlessly, confirming the authenticity of the shot.
+            </p>
+          );
+        },
+      },
+      {
+        title: "Endless Horizon",
+        description: "Another road trip shot, highlighting the expansive landscape",
+        src: "/assets/road trip.avif",
+        ctaText: "Details",
+        content: () => {
+          return (
+              <p>
+                 The scene’s composition and clarity suggest a genuine capture. The colors and shadows are natural, with no visual indicators of deepfake manipulation
+            </p>
+          );
+        },
+      },
+      {
+        title: "Open Road Adventure",
+        description: "A view from the car during a road trip, capturing the scenic landscape",
+        src: "/assets/road trip.avif",
+        ctaText: "Details",
+        content: () => {
+          return (
+              <p>
+                 The depth of field and perspective are consistent with authentic photography. The horizon and surrounding elements display no signs of distortion or digital tampering.
+            </p>
+          );
+        },
+      },
+      
 
     ];
     
@@ -147,20 +189,20 @@
     useOutsideClick(ref, () => setActive(null));
 
     return (
-      <>
+      <div className="max-w-[800px] mx-auto overflow-hidden">
       <AnimatePresence>
         {active && typeof active === "object" && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-[#00000098] h-full w-full z-10"
+            className="fixed inset-0 bg-[#15151584] h-full max-w-[100vw] z-10 backdrop-blur-xl"
           />
         )}
       </AnimatePresence>
       <AnimatePresence>
         {active && typeof active === "object" ? (
-          <div className="fixed inset-0 grid place-items-center z-[100]">
+          <div className="fixed inset-0 grid place-items-center  z-[100]">
             <motion.button
               key={`button-${active.title}-${id}`}
               layout
@@ -175,31 +217,31 @@
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-blue-800 dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+              className="main-card w-full max-w-[500px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-blue-800 dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <Image
                   priority
-                  width={200}
-                  height={200}
+                  width={400}
+                  height={400}
                   src={active.src}
                   alt={active.title}
-                  className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
+                  className="w-full h-[300px] object-cover"
                 />
               </motion.div>
 
-              <div>
-                <div className="flex justify-between items-start p-4">
+              <div className="max-w-[100vw]">
+                <div className="flex justify-between items-start pt-4 px-4 pb-2">
                   <div>
                     <motion.h3
                       layoutId={`title-${active.title}-${id}`}
-                      className="font-bold text-neutral-700 dark:text-neutral-200"
+                      className="font-bold text-white"
                     >
                       {active.title}
                     </motion.h3>
                     <motion.p
                       layoutId={`description-${active.description}-${id}`}
-                      className="text-neutral-600 dark:text-neutral-400"
+                      className="text-white dark:text-neutral-400"
                     >
                       {active.description}
                     </motion.p>
@@ -208,18 +250,18 @@
                   <motion.button
                     layoutId={`button-${active.title}-${id}`}
                     onClick={() => setActive(null)} // Add this to collapse the card
-                    className="px-4 py-3 text-sm rounded-full font-bold bg-green-500 text-white"
+                    className="px-5 py-2 text-sm rounded-lg font-bold bg-green-500 text-white"
                   >
                     Exit
                   </motion.button>
                 </div>
-                <div className="pt-4 relative px-4">
+                <div className="relative px-4 ">
                   <motion.div
                     layout
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="text-neutral-600 text-xs md:text-sm lg:text-base h-40 md:h-60 pb-10 flex flex-col items-start gap-4 overflow-y-auto dark:text-neutral-400"
+                    className="text-neutral-600 text-xs md:text-sm lg:text-base h-40 md:h-60 pb-10 flex flex-col items-start gap-4 overflow-y-auto dark:text-neutral-400 remove-scrollbar"
                   >
                     {active.content()}
                     {/* Buttons */}
@@ -244,7 +286,7 @@
           </div>
         ) : null}
       </AnimatePresence>
-      <ul className="max-w-2xl mx-auto w-full gap-4">
+      <ul className=" w-full gap-4">
         {cards.map((card) => (
           <motion.div
             layoutId={`card-${card.title}-${id}`}
@@ -265,7 +307,7 @@
               <div>
                 <motion.h3
                   layoutId={`title-${card.title}-${id}`}
-                  className="font-medium text-neutral-800 dark:text-white text-center md:text-left"
+                  className="font-medium text-white text-center md:text-left"
                 >
                   {card.title}
                 </motion.h3>
@@ -286,7 +328,7 @@
           </motion.div>
         ))}
       </ul>
-    </>
+    </div>
   );
 }
 

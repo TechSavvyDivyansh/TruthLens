@@ -6,9 +6,9 @@ import React, { useEffect, useState } from 'react'
 export default function Navbar() {
   
   return (
-    <div className="navbar shadow-2xl">
+    <div className="navbar bg-blue-900 fixed shadow-2xl">
       <Image src="/assets/logo.png" width={150} height={150} alt="logo"/>
-      <div className="highlighter -top-52 -right-52"></div>
+      <div className="highlighter -top-52 right-0 translate-x-52"></div>
 
       <div className="flex gap-44">
         <Link href="/analyse" className='text-sm text-slate-500 hover:text-white border-b-2 border-transparent p-1 hover:border-blue-700 transition-all delay-100'>Analysis</Link>
