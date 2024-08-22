@@ -26,6 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
+        <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
       </head>
       <body className={cn('max-h-screen font-sans antialiased bg-blue-900 text-white remove-scrollbar overflow-hidden max-w-[100vw]',fontSans.variable)}>
           {/* <ThemeProvider
