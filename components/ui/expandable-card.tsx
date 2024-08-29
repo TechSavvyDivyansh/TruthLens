@@ -85,7 +85,7 @@
         content: () => {
           return (
               <p>
-                The waterfall's flow appears unnaturally consistent, lacking the natural variations in water speed and direction. The splash at the base shows signs of being looped, which is a typical deepfake signature.
+                The waterfall flow appears unnaturally consistent, lacking the natural variations in water speed and direction. The splash at the base shows signs of being looped, which is a typical deepfake signature.
             </p>
           );
         },
