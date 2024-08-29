@@ -11,9 +11,9 @@ export default function Navbar() {
       <div className="highlighter -top-52 right-0 translate-x-52"></div>
 
       <div className="flex gap-44">
-        <Link href="/analyse" className='text-sm text-slate-500 hover:text-white border-b-2 border-transparent p-1 hover:border-blue-700 transition-all delay-100'>Analysis</Link>
-        <Link href="/history" className='text-sm text-slate-500 hover:text-white border-b-2 border-transparent p-1 hover:border-blue-700 transition-all delay-100'>History</Link>
-        <Link href="/report" className='text-sm text-slate-500 hover:text-white border-b-2 border-transparent p-1 hover:border-blue-700 transition-all delay-100'>Report</Link>
+        <Link href="/Analyse" className='text-sm text-slate-500 hover:text-white border-b-2 border-transparent p-1 hover:border-blue-700 transition-all delay-100'>Analysis</Link>
+        <Link href="/History" className='text-sm text-slate-500 hover:text-white border-b-2 border-transparent p-1 hover:border-blue-700 transition-all delay-100'>History</Link>
+        <Link href="/Report" className='text-sm text-slate-500 hover:text-white border-b-2 border-transparent p-1 hover:border-blue-700 transition-all delay-100'>Report</Link>
       </div>
 
       <div className="">
