@@ -9,7 +9,7 @@ import { useTheme } from 'next-themes';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
 
-export default function page() {
+export default function Analyse() {
   
   const handleFileCapture = (file: File) => {
     console.log('Captured file:', file);

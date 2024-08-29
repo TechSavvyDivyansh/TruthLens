@@ -2,7 +2,7 @@
 import { ExpandableCardDemo } from '@/components/ui/expandable-card';
 import React from 'react'
 
-export default function page() {
+export default function History() {
   return (
     <div className={`fixed top-[9vh] w-full h-[90vh]`}>
         {/* <div className='flex items-center justify-center h-10'>Add filters here</div> */}
